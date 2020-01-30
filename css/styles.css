@@ -8,7 +8,7 @@ body {
     text-align: center;
 }
 
-#win-screen, #draw-screen {
+#play-screen, #win-screen, #draw-screen {
     display: none;
 }
 
@@ -36,6 +36,7 @@ input {
     border-radius: 10%;
     color: silver;
     text-align: center;
+    margin-top: 30px;
 }
 
 .box {
@@ -51,5 +52,7 @@ input {
     border-radius: 5%;
     background-image: radial-gradient(pink, darkred);
     height: 50px;
-    width: 200px;    
+    width: 200px;   
+    margin-top: 30px; 
+    margin-bottom: 30px; 
 }
