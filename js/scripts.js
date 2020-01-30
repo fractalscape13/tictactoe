@@ -8,6 +8,7 @@ function Player(name, mark) {
 //user interface
 var xPlayer = "";
 var oPlayer = "";
+var turn = 0;
 $(document).ready(function() {
     $("form").submit(function() {
         event.preventDefault();
@@ -19,6 +20,13 @@ $(document).ready(function() {
         $("#play-screen").fadeIn();
     });
     $("#game-board").on("click", "td", function() {
+        if (turn % 2 === 0) {
         $(this).text(xPlayer.mark);
+        turn++;
+        } else {
+        $(this).text(oPlayer.mark);
+        turn++;
+        }
+        console.log(turn);
     });
 });
