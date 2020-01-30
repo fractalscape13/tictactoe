@@ -4,7 +4,6 @@ function Player(name, mark) {
     this.mark = mark;
 }
 
-
 //user interface
 var xPlayer = "";
 var oPlayer = "";
@@ -41,6 +40,9 @@ $(document).ready(function() {
                 $("#win-screen").text("And the winner is... " + winner + "!");
                 $("#win-screen").addClass("winner");
                 $("td").addClass("nonclick");
+            } else if (turn == 9) {
+                $("#win-screen").text("TIE GAME!");
+                $("#win-screen").addClass("tiegame");
             }
     });
 });
