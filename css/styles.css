@@ -1,0 +1,41 @@
+body, html {
+    min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(black, indigo, cyan, goldenrod, darkred);
+    font-family: monospace;
+    text-align: center;
+}
+
+#win-screen, #draw-screen {
+    display: none;
+}
+
+h1 {
+    color: yellow;
+}
+
+input {
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 10%;
+    color: silver;
+    text-align: center;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, .4);
+    margin: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
+}
+
+#start-btn {
+    border: 3px solid black;
+    border-radius: 5%;
+    background-image: radial-gradient(pink, darkred);
+    height: 50px;
+    width: 200px;    
+}
