@@ -22,14 +22,25 @@ $(document).ready(function() {
     });
     //button click to add X or O to board
     $("#game-board").on("click", "td", function() {
-        if (($(this).html()) == "") {
-            if (turn % 2 === 0) {
-            $(this).text(xPlayer.mark);
-            turn++;
-            } else {
-            $(this).text(oPlayer.mark);
-            turn++;
+            if (($(this).html()) == "") {
+                if (turn % 2 === 0) {
+                $(this).text(xPlayer.mark);
+                turn++;
+                } else {
+                $(this).text(oPlayer.mark);
+                turn++;
+                }
             }
-        }     
+            if (($("#a").html()) !== "" && ($("#b").html()) !== "" && ($("#a").html()) == ($("#b").html()) && ($("#b").html()) == ($("#c").html())) {
+                var winner = ""
+                if (turn % 2 === 0) {
+                    winner = oPlayer.name;
+                } else {
+                    winner = xPlayer.name;
+                }
+                $("#win-screen").text("And the winner is... " + winner + "!");
+                $("#win-screen").addClass("winner");
+                $("td").addClass("nonclick");
+            }
     });
 });

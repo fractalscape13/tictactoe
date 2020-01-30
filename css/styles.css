@@ -8,13 +8,18 @@ body {
     text-align: center;
 }
 
-#play-screen, #win-screen, #draw-screen {
+#play-screen, #draw-screen {
     display: none;
 }
 
 #game-board {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+#win-screen {
+    font-size: 40px;
+    color: rgb(255, 187, 0);
 }
 
 td {
@@ -60,4 +65,13 @@ input {
     width: 200px;   
     margin-top: 30px; 
     margin-bottom: 30px; 
+}
+
+.winner {
+    border: 15px dotted red;
+    border-radius: 30%;
+}
+
+.nonclick {
+    pointer-events: none;
 }
