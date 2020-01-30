@@ -32,21 +32,33 @@
     </div>
 
     <div id="play-screen" class="box">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="xplayer-turn" class="your-turn">
+                <h3><span id="xname"></span><br>team: X</h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="oplayer-turn">
+                <h3><span id="oname"></span><br>team: O</h3>
+                </div>
+            </div>
+        </div>
         <table id="game-board" align="center">
-            <tr id="row1">
-                <td class="col1">( )</td>
-                <td class="col2">( )</td>
-                <td class="col3">( )</td>
+            <tr>
+                <td id="a">( )</td>
+                <td id="b">( )</td>
+                <td id="c">( )</td>
             </tr>
-            <tr id="row2">
-                <td class="col1">[ ]</td>
-                <td class="col2">[ ]</td>
-                <td class="col3">[ ]</td>
+            <tr>
+                <td id="d">[ ]</td>
+                <td id="e">[ ]</td>
+                <td id="f">[ ]</td>
             </tr>
-            <tr id="row3">
-                <td class="col1">{ }</td>
-                <td class="col2">{ }</td>
-                <td class="col3">{ }</td>
+            <tr>
+                <td id="g">{ }</td>
+                <td id="h">{ }</td>
+                <td id="i">{ }</td>
             </tr>
         </table>
         <a href="index.html">Click to restart</a>

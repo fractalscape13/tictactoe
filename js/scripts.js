@@ -13,7 +13,12 @@ $(document).ready(function() {
         event.preventDefault();
         xPlayer = new Player(($("#xplayer-name").val()), ("X"));
         oPlayer = new Player(($("#oplayer-name").val()), ("O"));
+        $("#xname").text(xPlayer.name);
+        $("#oname").text(oPlayer.name);
         $("#start-screen").hide();
         $("#play-screen").fadeIn();
+    });
+    $("#game-board").on("click", "td", function() {
+        $(this).text(xPlayer.mark);
     });
 });
