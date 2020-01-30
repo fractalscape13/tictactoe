@@ -20,6 +20,7 @@ body {
 td {
     width: 200px;
     border: 1px solid black;
+    font-size: 80px;
 }
 
 tr {
@@ -28,6 +29,10 @@ tr {
 
 h1 {
     color: yellow;
+}
+
+h4 {
+    color: rgb(255, 174, 0);
 }
 
 input {
@@ -55,12 +60,4 @@ input {
     width: 200px;   
     margin-top: 30px; 
     margin-bottom: 30px; 
-}
-
-.left-align {
-    text-align: left;
-}
-
-.right-align {
-    text-align: right;
 }
