@@ -47,11 +47,13 @@ $(document).ready(function() {
                     winner = xPlayer.name;
                 }
                 $("#win-screen").text("And the winner is... " + winner + "!");
+                $("#game-board").addClass("winner");
                 $("#win-screen").addClass("winner");
                 $("td").addClass("nonclick");
             } else if (currentGame.turn == 9) {
                 $("#win-screen").text("TIE GAME!");
                 $("#win-screen").addClass("tiegame");
+                $("#game-board").addClass("tiegame");
             }
     });
 });
